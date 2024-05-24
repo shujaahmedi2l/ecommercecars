@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "ecommerce"
+  description: "Ecommerce project selling cars"
+  annotations:
+    github.com/project-slug: "shujaahmedi2l/ecommerce"
+    argocd/app-name: "ecommerce"
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://ecommerc-app.onexidp.com
+      title: Web Application
+      icon: LaunchIcon
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
